@@ -248,7 +248,7 @@ a  { color: inherit; text-decoration: none; }
 /* ── CONTACT ──────────────────────────────────────────────── */
 .contact {
   background: var(--color-dark);
-  padding-block: 72px;
+  padding-block: 48px;
 }
 .contact__inner {
   display: flex;
@@ -354,8 +354,11 @@ a  { color: inherit; text-decoration: none; }
   .container { padding-inline: 28px; }
 
   .header__inner {
-    justify-content: center;
+    justify-content: flex-start;
     padding-inline: 0;
+  }
+  .header__logo {
+    margin-left: -12px;
   }
   .header__nav {
     display: none;
@@ -374,8 +377,8 @@ a  { color: inherit; text-decoration: none; }
     gap: 32px;
   }
   .about__label-col {
-    flex-direction: row;
-    align-items: center;
+    flex-direction: column;
+    align-items: flex-start;
     padding-top: 0;
   }
 
@@ -389,5 +392,5 @@ a  { color: inherit; text-decoration: none; }
   .hero__content { padding-bottom: 52px; gap: 28px; }
 
   .about { padding-block: 48px; }
-  .contact { padding-block: 48px; }
+  .contact { padding-block: 32px; }
 }
